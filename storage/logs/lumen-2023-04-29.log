@@ -1,0 +1,78 @@
+[2023-04-29 19:10:19] local.ERROR: Trait "App\Traits\ApiResponser" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"App\\Traits\\ApiResponser\" not found at C:\\xampp\\htdocs\\joveren_pormento\\app\\Http\\Controllers\\TeacherController.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2023-04-29 19:10:49] local.ERROR: Trait "App\Traits\ApiResponser" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"App\\Traits\\ApiResponser\" not found at C:\\xampp\\htdocs\\joveren_pormento\\app\\Http\\Controllers\\TeacherController.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2023-04-29 19:19:43] local.ERROR: Trait "App\Traits\ApiResponser" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"App\\Traits\\ApiResponser\" not found at C:\\xampp\\htdocs\\joveren_pormento\\app\\Http\\Controllers\\TeacherController.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2023-04-29 19:22:37] local.ERROR: Trait "App\Traits\ApiResponser" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"App\\Traits\\ApiResponser\" not found at C:\\xampp\\htdocs\\joveren_pormento\\app\\Http\\Controllers\\TeacherController.php:7)
+[stacktrace]
+#0 {main}
+"} 
+[2023-04-29 19:48:34] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'studid' in 'where clause' (Connection: mysql, SQL: select * from `tblteacher` where `studid` = 1 limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'studid' in 'where clause' (Connection: mysql, SQL: select * from `tblteacher` where `studid` = 1 limit 1) at C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php:793)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php(753): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php(422): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(2719): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(2707): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(3248): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(2708): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Eloquent\\Builder.php(717): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Eloquent\\Builder.php(701): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Concerns\\BuildsQueries.php(296): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 C:\\xampp\\htdocs\\joveren_pormento\\app\\Http\\Controllers\\TeacherController.php(49): Illuminate\\Database\\Eloquent\\Builder->first()
+#10 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\TeacherController->getstudid('1')
+#11 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#12 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#13 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#14 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#15 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(391): Illuminate\\Container\\Container->call(Array, Array)
+#16 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(357): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#17 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(331): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\TeacherController), 'getstudid', Array)
+#18 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(284): Laravel\\Lumen\\Application->callControllerAction(Array)
+#19 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(269): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#20 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#21 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->handleDispatcherResponse(Array)
+#22 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#23 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(177): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#24 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#25 C:\\xampp\\htdocs\\joveren_pormento\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#26 {main}
+
+[previous exception] [object] (PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'studid' in 'where clause' at C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php:414)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php(414): PDO->prepare('select * from `...')
+#1 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php(786): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#2 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php(753): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Connection.php(422): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(2719): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#5 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(2707): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(3248): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Query\\Builder.php(2708): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Eloquent\\Builder.php(717): Illuminate\\Database\\Query\\Builder->get(Array)
+#9 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Eloquent\\Builder.php(701): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#10 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\database\\Concerns\\BuildsQueries.php(296): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#11 C:\\xampp\\htdocs\\joveren_pormento\\app\\Http\\Controllers\\TeacherController.php(49): Illuminate\\Database\\Eloquent\\Builder->first()
+#12 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\TeacherController->getstudid('1')
+#13 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#16 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\illuminate\\container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#17 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(391): Illuminate\\Container\\Container->call(Array, Array)
+#18 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(357): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#19 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(331): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\TeacherController), 'getstudid', Array)
+#20 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(284): Laravel\\Lumen\\Application->callControllerAction(Array)
+#21 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(269): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#22 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#23 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->handleDispatcherResponse(Array)
+#24 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#25 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(177): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#26 C:\\xampp\\htdocs\\joveren_pormento\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#27 C:\\xampp\\htdocs\\joveren_pormento\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#28 {main}
+"} 
